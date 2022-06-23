@@ -1,0 +1,21 @@
+server:
+  port: 8088
+
+spring:
+  #mysql 配置
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://112.124.59.133:3306/pfm_center?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: xywl2021!
+    hikari:
+      maximum-pool-size: 15
+      minimum-idle: 5
+      idle-timeout: 600000
+      connection-timeout: 600000
+      max-lifetime: 600000
+      auto-commit: true
+      connection-test-query: SELECT 1
+
+
